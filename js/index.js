@@ -52,14 +52,17 @@ contactLink.addEventListener('mouseup', () => {
 })
 
 const images = document.getElementsByTagName('img');
-
+const funImgParent = document.getElementsByClassName('inverse-content')[0];
 const busImg = images[0],
 adventureImg = images[1],
       funImg = images[2],
     slideImg = images[3];
 
-busImg.addEventListener('mouseenter', () => {
-  console.log('I am clicking');
+window.addEventListener('resize', () => {
+  busImg.style.height = '50px';
+  adventureImg.style.height = '150px';
+  adventureImg.style.width = '150px';
+  funImgParent.style.flexDirection = 'row-reverse';
 });
 
 const headerText = document.getElementsByTagName('h2');
