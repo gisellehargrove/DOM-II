@@ -41,10 +41,15 @@ blogLink.addEventListener('drag', () => {
 });
 
 const contactLink = document.getElementsByClassName('nav-link4')[0];
-contactLink.addEventListener('click', () => {
+contactLink.addEventListener('mousedown', () => {
   let randomNum = Math.floor(Math.random() * colors.length + 1);
   contactLink.style.color = colors[randomNum];
+  contactLink.style.opacity = 0;
 });
+
+contactLink.addEventListener('mouseup', () => {
+  contactLink.style.opacity = 1;
+})
 
 const images = document.getElementsByTagName('img');
 
