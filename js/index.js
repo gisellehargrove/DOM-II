@@ -2,28 +2,48 @@
 // Add 10 unique event listeners
 const logoHeading = document.getElementsByClassName('logo-heading')[0];
 
+// const tween = TweenLite.to(logoHeading, 2, {
+  // x: 100,
+  // ease: Bounce.easeInOut,
+  // delay: 2,
+  // onComplete: myFunction,
+  // onCompleteParams: [element, 'param2']
+// });
+
 logoHeading.addEventListener('mouseenter', () => {
-  console.log('I am clicking');
+  logoHeading.style.fontSize = '10rem';
 });
+
+logoHeading.addEventListener('mouseleave', () => {
+  logoHeading.style.fontSize = '4rem';
+});
+
+const colors = ['green', 'orange', 'pink', 'purple', 'red', 'blue', 'cyan', 'chartreuse', 'deepSkyBlue', 'FireBrick','thistle', 'peach']
 
 const homeLink = document.getElementsByClassName('nav-link1')[0];
-homeLink.addEventListener('mouseenter', () => {
-  console.log('I am listening');
+homeLink.addEventListener('click', () => {
+  let randomNum = Math.floor(Math.random() * colors.length + 1);
+  homeLink.style.color = colors[randomNum];
 });
 
+
 const aboutLink = document.getElementsByClassName('nav-link2')[0];
-aboutLink.addEventListener('mouseenter', () => {
-  console.log('I am listening');
+aboutLink.addEventListener('dblclick', () => {
+  let randomNum = Math.floor(Math.random() * colors.length + 1);
+  aboutLink.style.color = colors[randomNum];
 });
 
 const blogLink = document.getElementsByClassName('nav-link3')[0];
-blogLink.addEventListener('mouseenter', () => {
-  console.log('I am listening');
+blogLink.addEventListener('drag', () => {
+  let randomNum = Math.floor(Math.random() * colors.length + 1);
+  blogLink.style.color = colors[randomNum];
+  blogLink.classList.add('bordered');
 });
 
 const contactLink = document.getElementsByClassName('nav-link4')[0];
-contactLink.addEventListener('mouseenter', () => {
-  console.log('I am listening');
+contactLink.addEventListener('click', () => {
+  let randomNum = Math.floor(Math.random() * colors.length + 1);
+  contactLink.style.color = colors[randomNum];
 });
 
 const images = document.getElementsByTagName('img');
