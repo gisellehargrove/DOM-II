@@ -38,15 +38,3 @@ busImg.addEventListener('mouseenter', () => {
 });
 
 const headerText = document.getElementsByTagName('h2');
-
-
-// const s = document.getElementsByClassName('')[0];
-//
-//
-// const s = document.getElementsByClassName('')[0];
-//
-//
-// const s = document.getElementsByClassName('')[0];
-//
-//
-// const s = document.getElementsByClassName('')[0];
