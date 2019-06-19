@@ -350,3 +350,8 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+.bordered {
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 5px;
+}
